@@ -218,7 +218,7 @@ function library:CreateWindow(name, size, hidebutton)
     local window = { }
 print("Creation begin")
     window.name = name or ""
-    window.size = UDim2.fromOffset(size.X, size.Y) or UDim2.fromOffset(492, 598)
+    window.size = UDim2.fromOffset(size.X.Offset, size.Y.Offset) or UDim2.fromOffset(492, 598)
     window.hidebutton = hidebutton or Enum.KeyCode.RightShift
     window.theme = library.theme
 print("Creation vars")
