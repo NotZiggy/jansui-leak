@@ -227,6 +227,8 @@ function library:CreateWindow(name, size, hidebutton)
         updateevent:Fire(theme or library.theme)
         window.theme = (theme or library.theme)
     end
+	
+	print("Creation start")
 
     window.Main = Instance.new("ScreenGui", coregui)
     window.Main.Name = name
