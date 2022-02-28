@@ -272,6 +272,7 @@ function library:CreateWindow(name, size, hidebutton)
     window.Frame.Name = "main"
     window.Frame.Position = UDim2.fromScale(0.5, 0.5)
     window.Frame.BorderSizePixel = 0
+	print(window.size)
     window.Frame.Size = window.size
     window.Frame.AutoButtonColor = false
     window.Frame.Text = ""
