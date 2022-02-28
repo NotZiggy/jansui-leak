@@ -80,7 +80,7 @@ function library:CreateWatermark(name, position)
     watermark.main = Instance.new("ScreenGui", coregui)
     watermark.main.Name = "Watermark"
     if syn then
-        --syn.protect_gui(watermark.main)
+        syn.protect_gui(watermark.main)
     end
 
     if getgenv().watermark then
@@ -232,7 +232,7 @@ function library:CreateWindow(name, size, hidebutton)
     window.Main.Name = name
     window.Main.DisplayOrder = 15
     if syn then
-        syn.protect_gui(window.Main)
+        --syn.protect_gui(window.Main)
     end
 
     if getgenv().uilib then
